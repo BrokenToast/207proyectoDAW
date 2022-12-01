@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'pixel';
+    src: url(../..//doc/slkscr.ttf);
+}
+/*Globales*/
+body{
+    background-image: url(../..//doc/fondo_pagina.png);
+    background-position: top;
+    background-size: autor;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+/*Cabecero*/
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+header>h1{
+    font-size: 4vw;
+    font-family: "pixel";
+    color: #a4a4a4;
+}
+header>img{
+    width: 6vw;
+    margin-left: 10vw;
+    border-radius: 20px;
+}
+/*navegacion*/
+nav{
+    padding: 0.5vw;
+    margin-top: 10px;
+    display: flex;
+    position: sticky;
+    top:0px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #323234;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav>div{
+    padding: 0.8vw;
+    border-radius: 40px;
+    font-weight: bold;
+    background: #19191a;
+}
+nav p{
+    color: white;
+}
+.hijos{
+    display: none;
+    position: absolute;
+    top: 80%;
+    padding: 1vw;
+    background-color: #323234;
+    color: white;
+    border: white solid 2px;
+    border-radius:0px 0px 20px 20px;
+}
+.hijos li{
+    margin: 10px;
+    padding: 6px;
+    background-color:#19191a; 
+    border-radius: 6px;
+}
+#enc1:hover #hijo1{
+    display: flex;
+}
+#hijo1 li:nth-child(1n+7){
+    display: none;
+}
+/* pie de pagina*/
+footer{
+    width: 100%;
+    height: 4%;
+    background-color: #323234;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    padding: 2vw;
+}
+footer>div{
+    width: 48%;
+    display: flex;
+}
+footer>div:nth-of-type(1){
+    align-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    margin-right: 30px;
+}
+footer>div:nth-of-type(2){
+    justify-content: flex-end;
+}
+img[alt="Github"]{
+    width: 3.5em ;
+}
+img[alt="Linkdin"]{
+    width: 3.5em ;
+}
+img[alt="Mi curriculum"]{
+    width: 2em
+}

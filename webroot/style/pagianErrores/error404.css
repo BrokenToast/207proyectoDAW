@@ -1,0 +1,29 @@
+/*Globales*/
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(../../pageError/doc/IMG_6216.JPG);
+    background-size: 100vw;
+    background-position-x: 50%;
+    background-repeat: repeat-y;
+}
+/*Error*/
+div{
+    min-width: 300px;min-height: 280px;
+    width: 30vw; height: 30vh;
+    margin-top: 25vh;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(214, 188, 157);
+    text-align: center;
+    font-family: sans-serif;
+}
+div>h1{
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+div>p{
+    margin-top: 5vh;
+    font-size: 1.4em;
+}
