@@ -1,117 +1,128 @@
-@font-face {
-    font-family: 'pixel';
-    src: url(../..//doc/slkscr.ttf);
-}
 /*Globales*/
 body{
-    background-image: url(../..//doc/fondo_pagina.png);
-    background-position: top;
-    background-size: autor;
-    background-color: white;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    min-width: 800px;
+    box-sizing: content-box;
     font-family: sans-serif;
+}
+a{
     color: black;
     text-decoration: none;
 }
-
-/*Cabecero*/
+/*Header*/
 header{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10px;
+    position: relative;
 }
-header>h1{
-    font-size: 4vw;
-    font-family: "pixel";
-    color: #a4a4a4;
+header>*{
+    display: inline-block;
 }
 header>img{
-    width: 6vw;
-    margin-left: 10vw;
-    border-radius: 20px;
+    width: 10vw;
+    margin:10px 6% 0px 20%;
 }
-/*navegacion*/
+header>h1{
+    position: absolute;
+    bottom: 36%;
+    font-size: 3.5em;
+    font-weight: lighter;
+    text-decoration: underline 3px;
+}
+@media (width < 1300px) {
+    header>h1{
+        font-size: 1.8em;
+    }
+    header>img{
+        margin-left:5vw;
+    }
+}
+/*nav*/
 nav{
-    padding: 0.5vw;
-    margin-top: 10px;
-    display: flex;
-    position: sticky;
-    top:0px;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #323234;
+    width: 100%;
+    background-color: #F7F8FA;
+}
+@media (width > 1200px) {
+    nav>ul{
+        text-align: right;
+    }
+    nav>ul>li{
+        margin-right: 20px;
+    }
+}
+nav>ul>li{
+    height: 5vh;
+    line-height: 5vh;
+    margin-right: 10px;
+    box-sizing: border-box;
+    display: inline-block;
 }
 nav a{
-    color: white;
-    text-decoration: none;
+    height: 5vh;
+    display: block;
+    padding: 0px 6px 0px 6px;
+    font-weight:bold;
 }
-nav>div{
-    padding: 0.8vw;
-    border-radius: 40px;
+    /*Mecanicas*/
+    nav>ul>li>a:hover{
+        background-color: #333333;
+        color: white;
+    }
+/*Content*/
+article:nth-of-type(1){
+    box-sizing: border-box;
+    padding: 5%;
+    background-color: #E5E5E5;
+}
+article:nth-of-type(1)>div{
+    width:50vw;
+    bottom: 6vh;
+}
+article>*{
+    display: inline-block;
+}
+article h2{
+    margin-bottom: 30px;
+    font-size: 2.3em;
     font-weight: bold;
-    background: #19191a;
+    text-decoration: underline;
 }
-nav p{
-    color: white;
+article p{
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-bottom: 3vh;
 }
-.hijos{
-    display: none;
-    position: absolute;
-    top: 80%;
-    padding: 1vw;
-    background-color: #323234;
-    color: white;
-    border: white solid 2px;
-    border-radius:0px 0px 20px 20px;
-}
-.hijos li{
-    margin: 10px;
-    padding: 6px;
-    background-color:#19191a; 
-    border-radius: 6px;
-}
-#enc1:hover #hijo1{
-    display: flex;
-}
-#hijo1 li:nth-child(1n+7){
-    display: none;
-}
-/* pie de pagina*/
+    /*Boton mas información*/
+    .masInfo{
+        width: 200px; height: 4vh;
+        line-height: 4vh;
+        margin-left: 4%;
+        border-radius: 2vh;
+        display: block;
+        background-color: #134287;
+        color: white;
+        font-weight: 800;
+        font-size: 1.1em;
+        text-align: center;
+    }
+        /*Mecanicas boton*/
+        .masInfo:hover{
+            text-decoration: underline 2px;
+        }
+    
+/*Footer*/
 footer{
-    width: 100%;
-    height: 4%;
-    background-color: #323234;
-    display: flex;
+    width: 100%;height: 5vh;
+    padding-top: 1%;
     position: fixed;
     bottom: 0px;
-    padding: 2vw;
+    background-color: #F5F6F9;
 }
 footer>div{
-    width: 48%;
-    display: flex;
-}
-footer>div:nth-of-type(1){
-    align-content: center;
-    align-items: center;
-}
-footer p{
-    color: white;
-    margin-right: 30px;
+    display: inline-block;
 }
 footer>div:nth-of-type(2){
-    justify-content: flex-end;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
 }
-img[alt="Github"]{
-    width: 3.5em ;
-}
-img[alt="Linkdin"]{
-    width: 3.5em ;
-}
-img[alt="Mi curriculum"]{
-    width: 2em
+footer>div>*{
+    display: inline-block;
 }
