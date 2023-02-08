@@ -126,3 +126,7 @@ footer>div:nth-of-type(2){
 footer>div>*{
     display: inline-block;
 }
+/*Reloj*/
+#numeros>img{
+    width: 3%;
+}
